@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-NG">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Charterhouse Lagos: British International School in Nigeria.</title>
-<meta name="description" content="Charterhouse Lagos is the most eminent international school in Lagos, Nigeria. British Independent Schooling, Day & Boarding, Primary & Secondary.">
-<link rel="icon" href="https://charterhouselagos.com/wp-content/uploads/2023/01/cropped-chl-favicon-512x512-1-32x32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="https://charterhouselagos.com/wp-content/uploads/2023/01/cropped-chl-favicon-512x512-1-180x180.png">
+<title>Shelruach IMO: Excellence in Education, Imo State, Nigeria.</title>
+<meta name="description" content="Shelruach IMO is a forward-thinking school in Imo State, Nigeria, nurturing confident, curious and capable young people through learner-centred education.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 /* =========================================================
-   Charterhouse Lagos — homepage recreation
-   Self-contained recreation of the supplied saved page.
+   Shelruach IMO — homepage
    ========================================================= */
 :root{
   --navy:#0b2a4a;
@@ -68,8 +65,9 @@ p{margin:0 0 1.1em;}
 /* ---------- Header ---------- */
 .header{position:absolute;top:0;left:0;width:100%;z-index:50;padding:26px 0;}
 .header__inner{display:flex;align-items:center;justify-content:space-between;gap:24px;}
-.header__logo .logo span{display:block;width:188px;height:60px;background-repeat:no-repeat;background-position:left center;background-size:contain;}
-.header__logo .logo span:nth-child(2){display:none;}
+.logo-word{display:flex;flex-direction:column;line-height:1;color:#fff;}
+.logo-word strong{font-family:var(--serif);font-size:30px;font-weight:700;letter-spacing:.06em;}
+.logo-word span{font-size:11px;letter-spacing:.32em;text-transform:uppercase;margin-top:5px;color:var(--rose);}
 .header__nav{flex:1;display:flex;justify-content:center;}
 .nav-utilities ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:26px;}
 .nav-utilities>ul>li>a{
@@ -118,7 +116,7 @@ p{margin:0 0 1.1em;}
 .section-blue .section__content p:first-child{font-family:var(--serif);font-size:27px;line-height:1.4;color:#fff;}
 .section-blue .section__content a{color:#fff;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--rose);}
 
-/* ---------- Section: tiles (world-class teachers + schedule) ---------- */
+/* ---------- Section: tiles ---------- */
 .section-tiles{background:#fff;}
 .section-tiles .section__image img{width:100%;height:60vh;max-height:620px;object-fit:cover;}
 .section-tiles .section__container{padding:80px 0 90px;}
@@ -134,10 +132,8 @@ p{margin:0 0 1.1em;}
 .list-dates p{font-weight:500;color:var(--ink);margin-bottom:6px;}
 .list-dates small{color:var(--muted);font-size:14px;}
 .section__schedule-text{margin-top:38px;color:var(--muted);}
-.section__schedule-actions{margin-top:10px;}
-.section__schedule-actions{display:none;}
 
-/* ---------- Section: campus (secondary school) ---------- */
+/* ---------- Section: campus ---------- */
 .section-campus{position:relative;color:#fff;}
 .section-campus .section__image{position:absolute;inset:0;z-index:0;}
 .section-campus .section__image img{width:100%;height:100%;object-fit:cover;}
@@ -147,14 +143,12 @@ p{margin:0 0 1.1em;}
 .section-campus .section__content p{color:rgba(255,255,255,.92);}
 .section-campus .section__actions{margin-top:14px;}
 
-/* ---------- Section: video (heritage / quote) ---------- */
+/* ---------- Section: video / story ---------- */
 .section-video{background:#f6f1f0;padding:96px 0;}
 .section-video .section__inner{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
-.section-video .section__content>img{width:230px;margin-bottom:26px;}
+.section-video .section__content .eyebrow{font-family:var(--serif);font-size:30px;color:var(--rose-deep);margin-bottom:14px;display:block;}
 .section-video .section__content p{font-family:var(--serif);font-size:26px;line-height:1.4;color:var(--navy);}
-.section-video .section__content a{color:var(--rose-deep);text-decoration:underline;text-underline-offset:3px;}
 .section-video .section__actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px;}
-.section-video .section__actions a{text-decoration:none;}
 .video-box{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(11,42,74,.12);}
 .video__image{position:relative;}
 .video__image img{width:100%;height:300px;object-fit:cover;}
@@ -167,7 +161,7 @@ p{margin:0 0 1.1em;}
 /* ---------- Separator ---------- */
 .section-separator{background:#fff;padding:46px 0;display:flex;justify-content:center;}
 .section-separator .section__element{color:var(--rose);}
-.section-separator svg{width:90px;height:auto;}
+.section-separator svg{width:120px;height:auto;}
 
 /* ---------- Footer ---------- */
 .footer{background:var(--navy-deep);color:#fff;}
@@ -177,22 +171,24 @@ p{margin:0 0 1.1em;}
 .subscribe__head p{color:rgba(255,255,255,.78);max-width:440px;}
 .form__content{display:flex;gap:12px;flex-wrap:wrap;align-items:stretch;margin-top:14px;}
 .form__content label{flex:1;min-width:240px;font-size:13px;color:rgba(255,255,255,.6);}
-.wpcf7-form-control.wpcf7-email{width:100%;margin-top:6px;padding:15px 18px;border-radius:50px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;font-family:var(--sans);font-size:15px;}
-.wpcf7-form-control.wpcf7-email::placeholder{color:rgba(255,255,255,.5);}
-.wpcf7-submit{align-self:flex-end;padding:15px 34px;border-radius:50px;border:0;background:var(--rose-deep);color:#fff;font-family:var(--sans);font-weight:600;cursor:pointer;transition:.28s;}
-.wpcf7-submit:hover{background:#b9788d;}
+.field-email{width:100%;margin-top:6px;padding:15px 18px;border-radius:50px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;font-family:var(--sans);font-size:15px;}
+.field-email::placeholder{color:rgba(255,255,255,.5);}
+.btn-submit{align-self:flex-end;padding:15px 34px;border-radius:50px;border:0;background:var(--rose-deep);color:#fff;font-family:var(--sans);font-weight:600;cursor:pointer;transition:.28s;}
+.btn-submit:hover{background:#b9788d;}
 .footer__socials ul{list-style:none;margin:0;padding:0;display:flex;gap:14px;}
 .footer__socials li a{display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.1);transition:.28s;}
 .footer__socials li a:hover{background:var(--rose-deep);transform:translateY(-3px);}
 .footer__socials svg{width:20px;height:20px;fill:#fff;}
 .footer__content{padding:64px 0 36px;}
-.footer__title p a{font-family:var(--serif);font-size:24px;color:#fff;}
+.footer__title p{font-family:var(--serif);font-size:24px;color:#fff;margin:0;}
 .footer__title{margin-bottom:46px;}
 .footer__cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;}
 .footer__contact-info p{font-size:15px;color:rgba(255,255,255,.8);margin-bottom:10px;display:flex;gap:8px;align-items:baseline;}
 .footer__contact-info a{color:rgba(255,255,255,.8);}
 .footer__contact-info a:hover{color:var(--rose);}
-.footer__contact-info img{margin-top:22px;width:150px;}
+.footer__logo-word{margin-top:22px;}
+.footer__logo-word strong{font-family:var(--serif);font-size:24px;font-weight:700;letter-spacing:.06em;color:#fff;}
+.footer__logo-word span{display:block;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--rose);margin-top:4px;}
 .footer__subtitle p{font-family:var(--serif);font-size:20px;color:var(--rose);margin-bottom:16px;}
 .footer__nav ul{list-style:none;margin:0;padding:0;}
 .footer__nav li{margin-bottom:11px;}
@@ -226,12 +222,11 @@ p{margin:0 0 1.1em;}
 @media(max-width:1080px){
   .nav-utilities>ul{gap:18px;}
   .nav-utilities>ul>li>a{font-size:14px;}
-  .header__logo .logo span{width:158px;height:50px;}
+  .logo-word strong{font-size:25px;}
 }
 @media(max-width:960px){
   .header__nav,.header>.shell .custom-btn{display:none;}
   .nav-trigger{display:flex;}
-  .header__inner{justify-content:space-between;}
   .section__inner{grid-template-columns:1fr;gap:40px;}
   .section-tiles .section__inner{grid-template-columns:1fr;gap:30px;}
   .section-video .section__inner{grid-template-columns:1fr;gap:40px;}
@@ -274,9 +269,8 @@ p{margin:0 0 1.1em;}
   <div class="shell">
     <div class="header__inner">
       <div class="header__logo">
-        <a href="https://charterhouselagos.com/" class="logo">
-          <span style="background-image:url(https://charterhouselagos.com/wp-content/themes/charterhouse/resources/images/logo.svg);"></span>
-          <span style="background-image:url(https://charterhouselagos.com/wp-content/themes/charterhouse/resources/images/logo-dark.svg);"></span>
+        <a href="#" class="logo-word" aria-label="Shelruach IMO home">
+          <strong>SHELRUACH</strong><span>Imo &middot; Nigeria</span>
         </a>
       </div>
       <button type="button" class="nav-trigger js-nav-trigger" aria-label="Open menu">
@@ -285,37 +279,33 @@ p{margin:0 0 1.1em;}
       <div class="header__nav">
         <nav class="nav-utilities">
           <ul class="menu">
-            <li><a href="https://charterhouselagos.com/" aria-current="page">Home</a></li>
+            <li><a href="#" aria-current="page">Home</a></li>
             <li class="menu-item-has-children"><a href="#">About Us <i class="material-icons">&#9662;</i></a>
               <ul class="sub-menu">
-                <li><a href="https://charterhouselagos.com/values/">Values Framework</a></li>
-                <li><a href="https://charterhouselagos.com/teachers/">Teachers</a></li>
-                <li><a href="https://charterhouselagos.com/our-team/">Leadership</a></li>
-                <li><a href="https://charterhouselagos.com/our-story/">Our Story</a></li>
-                <li><a href="https://charterhouselagos.com/our-heritage/">Heritage</a></li>
-                <li><a href="https://charterhouselagos.com/blog/">Director&rsquo;s Blog</a></li>
-                <li><a href="https://charterhouselagos.com/contact-us/">FAQs</a></li>
+                <li><a href="#">Our Mission &amp; Values</a></li>
+                <li><a href="#">Our Teachers</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">FAQs</a></li>
               </ul>
             </li>
-            <li class="menu-item-has-children"><a href="https://charterhouselagos.com/admissions/">Admissions <i class="material-icons">&#9662;</i></a>
+            <li class="menu-item-has-children"><a href="#">Admissions <i class="material-icons">&#9662;</i></a>
               <ul class="sub-menu">
-                <li><a href="https://charterhouselagos.com/admission-year-1-9/">Years 1-9</a></li>
-                <li><a href="https://charterhouselagos.com/igcse-year-10/">IGCSE (Year 10)</a></li>
-                <li><a href="https://charterhouselagos.com/alevels-year-12/">A-Levels (Year 12)</a></li>
-                <li><a href="https://charterhouselagos.com/charters-boutique/">Charters Boutique</a></li>
+                <li><a href="#">How to Apply</a></li>
+                <li><a href="#">Fees</a></li>
+                <li><a href="#">Visit Us</a></li>
               </ul>
             </li>
-            <li class="menu-item-has-children"><a href="https://charterhouselagos.com/academics/">Academics <i class="material-icons">&#9662;</i></a>
+            <li class="menu-item-has-children"><a href="#">Academics <i class="material-icons">&#9662;</i></a>
               <ul class="sub-menu">
-                <li><a href="https://charterhouselagos.com/pry-school/">Primary School</a></li>
-                <li><a href="https://charterhouselagos.com/secondary-school/">Secondary School</a></li>
-                <li><a href="https://charterhouselagos.com/boarding/">Boarding</a></li>
-                <li><a href="https://charterhouselagos.com/term-dates-2025-2026/">Term Dates 2025 &ndash; 2026</a></li>
-                <li><a href="https://charterhouselagos.com/term-dates-2026-2027/">Term Dates 2026 &ndash; 2027</a></li>
+                <li><a href="#">Primary School</a></li>
+                <li><a href="#">Secondary School</a></li>
+                <li><a href="#">Boarding</a></li>
+                <li><a href="#">Term Dates</a></li>
               </ul>
             </li>
-            <li><a href="https://charterhouselagos.com/our-campus/">Campus Virtual Tour</a></li>
-            <li><a href="https://charterhouselagos.net/">Careers</a></li>
+            <li><a href="#">Campus Tour</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -323,42 +313,38 @@ p{margin:0 0 1.1em;}
       <div class="header__content">
         <nav class="nav-mobile">
           <ul class="menu">
-            <li><a href="https://charterhouselagos.com/">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a>
               <ul class="sub-menu">
-                <li><a href="https://charterhouselagos.com/values/">Values Framework</a></li>
-                <li><a href="https://charterhouselagos.com/teachers/">Teachers</a></li>
-                <li><a href="https://charterhouselagos.com/our-team/">Leadership</a></li>
-                <li><a href="https://charterhouselagos.com/our-story/">Our Story</a></li>
-                <li><a href="https://charterhouselagos.com/our-heritage/">Heritage</a></li>
-                <li><a href="https://charterhouselagos.com/blog/">Director&rsquo;s Blog</a></li>
-                <li><a href="https://charterhouselagos.com/contact-us/">FAQs</a></li>
+                <li><a href="#">Our Mission &amp; Values</a></li>
+                <li><a href="#">Our Teachers</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">FAQs</a></li>
               </ul>
             </li>
-            <li><a href="https://charterhouselagos.com/admissions/">Admissions</a>
+            <li><a href="#">Admissions</a>
               <ul class="sub-menu">
-                <li><a href="https://charterhouselagos.com/admission-year-1-9/">Years 1-9</a></li>
-                <li><a href="https://charterhouselagos.com/igcse-year-10/">IGCSE (Year 10)</a></li>
-                <li><a href="https://charterhouselagos.com/alevels-year-12/">A-Levels (Year 12)</a></li>
-                <li><a href="https://charterhouselagos.com/charters-boutique/">Charters Boutique</a></li>
+                <li><a href="#">How to Apply</a></li>
+                <li><a href="#">Fees</a></li>
+                <li><a href="#">Visit Us</a></li>
               </ul>
             </li>
-            <li><a href="https://charterhouselagos.com/academics/">Academics</a>
+            <li><a href="#">Academics</a>
               <ul class="sub-menu">
-                <li><a href="https://charterhouselagos.com/pry-school/">Primary School</a></li>
-                <li><a href="https://charterhouselagos.com/secondary-school/">Secondary School</a></li>
-                <li><a href="https://charterhouselagos.com/boarding/">Boarding</a></li>
-                <li><a href="https://charterhouselagos.com/term-dates-2025-2026/">Term Dates 2025 &ndash; 2026</a></li>
-                <li><a href="https://charterhouselagos.com/term-dates-2026-2027/">Term Dates 2026 &ndash; 2027</a></li>
+                <li><a href="#">Primary School</a></li>
+                <li><a href="#">Secondary School</a></li>
+                <li><a href="#">Boarding</a></li>
+                <li><a href="#">Term Dates</a></li>
               </ul>
             </li>
-            <li><a href="https://charterhouselagos.com/our-campus/">Campus Virtual Tour</a></li>
-            <li><a href="https://charterhouselagos.net/">Careers</a></li>
+            <li><a href="#">Campus Tour</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <a href="https://charterhouselagos.com/admission-enquiry/" class="custom-btn enquire-mobile">Enquire Now</a>
+        <a href="#" class="custom-btn enquire-mobile">Enquire Now</a>
       </div>
-      <a href="https://charterhouselagos.com/admission-enquiry/" class="custom-btn">Enquire Now</a>
+      <a href="#" class="custom-btn">Enquire Now</a>
     </div>
   </div>
 </header>
@@ -368,10 +354,10 @@ p{margin:0 0 1.1em;}
 <!-- ============ HERO ============ -->
 <section class="hero-home">
   <div class="hero__image image-fit">
-    <img class="desktop" fetchpriority="high" width="1200" height="600" alt=""
-      src="https://charterhouselagos.com/wp-content/uploads/2026/04/Website-Home-Page-1200-x-600-px-6.png">
-    <img class="mobile" width="800" height="1200" alt=""
-      src="https://charterhouselagos.com/wp-content/uploads/2026/04/Website-Mobile-Homepage-8.png">
+    <img class="desktop" fetchpriority="high" width="1600" height="640" alt="Shelruach IMO students"
+      src="https://picsum.photos/seed/shelruach-hero/1600/640">
+    <img class="mobile" width="800" height="1100" alt="Shelruach IMO students"
+      src="https://picsum.photos/seed/shelruach-hero-m/800/1100">
   </div>
   <div class="hero__content" data-aos="fade-up">
     <div class="shell">
@@ -395,19 +381,19 @@ p{margin:0 0 1.1em;}
         <div class="section__links">
           <p>Explore</p>
           <ul>
-            <li><a href="https://charterhouselagos.com/our-campus/">Our campus virtual tour</a></li>
-            <li><a href="https://charterhouselagos.com/our-team/">Our Leadership</a></li>
-            <li><a href="https://charterhouselagos.com/our-heritage/">Our heritage</a></li>
-            <li><a href="https://charterhouselagos.com/secondary/">Secondary School</a></li>
-            <li><a href="https://charterhouselagos.com/boarding/">Boarding</a></li>
+            <li><a href="#">Take a campus tour</a></li>
+            <li><a href="#">Meet our leadership</a></li>
+            <li><a href="#">Our story</a></li>
+            <li><a href="#">Secondary school</a></li>
+            <li><a href="#">Boarding life</a></li>
           </ul>
         </div>
       </div>
       <div class="section__content richtext-entry" data-aos="fade-left">
-        <p>Welcome to Charterhouse Lagos, the first British independent school in West Africa and a member of the Charterhouse family of schools located in the heart of Nigeria&rsquo;s economic capital, Lagos. We are an academically selective school offering the British curriculum.</p>
-        <p>Find out more about our <a href="https://charterhouselagos.com/our-campus/">state-of-the-art facilities</a>, <a href="https://charterhouselagos.com/our-story/">400 years of heritage</a>, and <a href="https://charterhouselagos.com/our-team/">world-class teachers</a>.</p>
-        <p>We offer <a href="https://charterhouselagos.com/boarding/">boarding</a> and day options for <a href="https://charterhouselagos.com/primary/">primary</a> and <a href="https://charterhouselagos.com/secondary/">secondary</a> school.</p>
-        <p>Admissions are now open &mdash; <a href="https://charterhouselagos.com/our-campus/">begin your child&rsquo;s journey today</a></p>
+        <p>Welcome to Shelruach IMO, a community-centred school in the heart of Imo State, Nigeria, where every child is known, valued and inspired to reach their full potential.</p>
+        <p>We bring together <a href="#">dedicated teachers</a>, a <a href="#">thoughtfully designed curriculum</a>, and a <a href="#">warm, purposeful environment</a> so that learning is joyful and rigorous in equal measure.</p>
+        <p>We offer <a href="#">day and boarding</a> options across our <a href="#">primary</a> and <a href="#">secondary</a> schools.</p>
+        <p>Admissions are now open &mdash; <a href="#">begin your child&rsquo;s journey today</a>.</p>
       </div>
     </div>
   </div>
@@ -416,55 +402,52 @@ p{margin:0 0 1.1em;}
 <!-- ============ TILES (teachers + schedule) ============ -->
 <section class="section-tiles">
   <div class="section__image">
-    <img loading="lazy" width="2560" height="1706" alt=""
-      src="https://charterhouselagos.com/wp-content/uploads/2025/09/CHARTERHOUSE-144-1-1-scaled.jpg">
+    <img loading="lazy" width="2000" height="1100" alt="A Shelruach IMO classroom"
+      src="https://picsum.photos/seed/shelruach-teach/2000/1100">
   </div>
   <div class="shell">
     <div class="section__container">
       <div class="section__inner" data-aos="fade-up">
         <aside class="section__aside">
-          <h2>World-class teachers: evidence-based learning</h2>
+          <h2>Dedicated teachers, learner-centred education</h2>
         </aside>
         <div class="section__content richtext-entry">
-          <p>At Charterhouse Lagos, we deliver a forward-thinking education built on the British curriculum and evidence-based teaching. We empower skilled teachers with proven training methods to create a dynamic, respectful, and academically-focused environment where children excel.</p>
-          <a href="https://charterhouselagos.com/your-child-education/" class="btn">Learning at Charterhouse Lagos</a>
+          <p>At Shelruach IMO we believe great teaching changes lives. Our staff combine strong subject knowledge with proven, evidence-informed methods to create classrooms that are dynamic, respectful and focused on every learner&rsquo;s progress.</p>
+          <a href="#" class="btn">Learning at Shelruach IMO</a>
         </div>
       </div>
 
       <div class="section__schedule" data-aos="fade-up">
         <div class="section__schedule-title">
-          <h2>Our school opening schedule</h2>
-          <a href="https://charterhouselagos.com/admissions/" class="btn btn--secondary">More about admissions</a>
+          <h2>Our admissions schedule</h2>
+          <a href="#" class="btn btn--secondary">More about admissions</a>
         </div>
         <div class="section__schedule-dates">
           <div class="list-dates">
             <ul>
               <li>
-                <h3>Sept 2024 (Open)</h3>
-                <p>Years 1 - 6</p>
+                <h3>Early Years</h3>
+                <p>Nursery &amp; Reception</p>
+                <small>Ages 3 - 5 years</small>
+              </li>
+              <li>
+                <h3>Primary School</h3>
+                <p>Years 1 - 6 (day &amp; boarding)</p>
                 <small>Ages 5 - 11 years</small>
               </li>
               <li>
-                <h3>Sept 2025 (Open)</h3>
-                <p>Years 7, 8 &amp; 9 (with weekly or full boarding option)</p>
-                <small>Ages 11 - 13 years</small>
-              </li>
-              <li>
-                <h3>Sept 2026</h3>
-                <p>Year 10 (IGCSE) and Y12 (A levels)</p>
-                <small>Ages 14 and 16 years</small>
+                <h3>Secondary School</h3>
+                <p>Years 7 - 12 (day &amp; boarding)</p>
+                <small>Ages 11 - 18 years</small>
               </li>
             </ul>
           </div>
         </div>
         <div class="section__schedule-text richtext-entry">
-          <p>Our first Primary School students started in September 2024 in Years 1 &ndash; 6.</p>
-          <p>Our Secondary School opened for Years 7, 8 &amp; 9 in September 2025 with weekly or termly boarding options.</p>
-          <p>Y10 for IGCSE and Y12 for A levels will open in September 2026.</p>
-          <p>Get in touch today to learn more about the process for admissions and how to secure your child&rsquo;s place.</p>
-        </div>
-        <div class="section__schedule-actions">
-          <a href="https://charterhouselagos.com/admissions/" class="btn btn--secondary">More about admissions</a>
+          <p>Applications are welcome throughout the year, with main intakes ahead of each new term.</p>
+          <p>Boarding places are available for our primary and secondary year groups, with weekly and full boarding options.</p>
+          <p>Our admissions team is happy to arrange a visit so you can experience the Shelruach community first-hand.</p>
+          <p>Get in touch today to learn more about the process and how to secure your child&rsquo;s place.</p>
         </div>
       </div>
     </div>
@@ -474,8 +457,8 @@ p{margin:0 0 1.1em;}
 <!-- ============ CAMPUS (secondary school) ============ -->
 <section class="section-campus">
   <div class="section__image">
-    <img loading="lazy" width="1366" height="746" alt=""
-      src="https://charterhouselagos.com/wp-content/uploads/2024/12/site-photo.jpg">
+    <img loading="lazy" width="1600" height="900" alt="Shelruach IMO campus"
+      src="https://picsum.photos/seed/shelruach-campus/1600/900">
   </div>
   <div class="shell">
     <div class="section__container">
@@ -484,29 +467,28 @@ p{margin:0 0 1.1em;}
           <h2>Secondary School</h2>
         </aside>
         <div class="section__content richtext-entry">
-          <p>Our British Curriculum ensures a solid foundation in core subjects, fostering deep learning and success; this combined with our commitment to safeguarding creates a safe and supportive space where your child thrives.</p>
-          <p>With boarding that reflects the UK&rsquo;s highest standards, we provide a structured, nurturing home away from home.</p>
+          <p>Our secondary curriculum builds a solid foundation in core subjects while encouraging curiosity, independence and depth of understanding &mdash; preparing students for the next stage of their education and beyond.</p>
+          <p>With pastoral care and safeguarding at the heart of everything we do, and boarding that feels like a true home away from home, your child will be supported to thrive.</p>
         </div>
       </div>
       <div class="section__actions" data-aos="fade-up">
-        <a href="https://charterhouselagos.com/secondary/" class="btn btn--pink">Learn more</a>
+        <a href="#" class="btn btn--pink">Learn more</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ VIDEO / HERITAGE ============ -->
+<!-- ============ STORY / QUOTE ============ -->
 <section class="section-video">
   <div class="shell">
     <div class="section__inner" data-aos="fade-up">
       <div class="section__content richtext-entry">
-        <img alt="Charterhouse"
-          src="https://charterhouselagos.com/wp-content/themes/charterhouse/resources/images/logo-dark.svg">
-        <p>We are part of the <a href="https://www.charterhouse.org.uk/about-us/family-of-schools">Charterhouse family of schools</a>, a name that has been at the forefront of British education for more than 400 years.</p>
+        <span class="eyebrow">Our story</span>
+        <p>Shelruach IMO was founded on a simple conviction: that an excellent, values-driven education should be within reach of families across Imo State and beyond.</p>
         <div class="section__actions">
-          <a href="https://charterhouselagos.com/our-heritage/" class="btn btn--purple">Discover more about our heritage</a>
-          <a href="https://www.charterhouse.org.uk/" target="_blank" rel="noopener" class="btn btn--pink">
-            Visit Charterhouse UK
+          <a href="#" class="btn btn--purple">Discover more about us</a>
+          <a href="#" class="btn btn--pink">
+            Visit our campus
             <svg viewBox="0 0 24 24" width="16" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
           </a>
         </div>
@@ -514,14 +496,14 @@ p{margin:0 0 1.1em;}
       <div class="section__aside">
         <div class="video-box">
           <div class="video__image">
-            <img loading="lazy" width="396" height="332" alt=""
-              src="https://charterhouselagos.com/wp-content/uploads/2023/01/video-ph.jpg">
+            <img loading="lazy" width="600" height="500" alt="Message from our Head of School"
+              src="https://picsum.photos/seed/shelruach-head/600/500">
           </div>
           <div class="video__content">
             <div class="video__entry">
-              <h3>Meet our Head and Director of Education:<br>John Todd</h3>
-              <p>&ldquo;Charterhouse Lagos is a vote of confidence in the future of Nigeria.&rdquo;</p>
-              <a href="https://charterhouselagos.com/our-team/" class="btn btn--tertiary">More on our leadership team</a>
+              <h3>A message from our<br>Head of School</h3>
+              <p>&ldquo;At Shelruach, every child is seen, encouraged and challenged to become the very best version of themselves.&rdquo;</p>
+              <a href="#" class="btn btn--tertiary">More on our leadership team</a>
             </div>
           </div>
         </div>
@@ -533,7 +515,7 @@ p{margin:0 0 1.1em;}
 <!-- ============ SEPARATOR ============ -->
 <section class="section-separator">
   <div class="section__element" aria-hidden="true">
-    <svg viewBox="0 0 120 30" fill="currentColor"><path d="M0 15 Q30 0 60 15 T120 15" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+    <svg viewBox="0 0 120 30" fill="none"><path d="M0 15 Q30 0 60 15 T120 15" stroke="currentColor" stroke-width="3" fill="none"/></svg>
   </div>
 </section>
 
@@ -551,12 +533,12 @@ p{margin:0 0 1.1em;}
               <p>Sign up to our newsletter to stay informed about all new developments</p>
             </div>
             <div class="subscribe__body">
-              <form class="wpcf7-form" onsubmit="return false;">
+              <form onsubmit="return false;">
                 <div class="form__content">
                   <label> Your email
-                    <input class="wpcf7-form-control wpcf7-email" type="email" name="your-email" placeholder="Your email address" autocomplete="email">
+                    <input class="field-email" type="email" name="your-email" placeholder="Your email address" autocomplete="email">
                   </label>
-                  <input class="wpcf7-submit" type="submit" value="Sign Up">
+                  <input class="btn-submit" type="submit" value="Sign Up">
                 </div>
               </form>
             </div>
@@ -565,19 +547,19 @@ p{margin:0 0 1.1em;}
         <div class="footer__socials" data-aos="fade-up">
           <p>Connect with us</p>
           <ul>
-            <li><a href="https://www.linkedin.com/company/charterhouse-lagos/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <li><a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
               <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.2 2.3-2.46 4.73-2.46C22 7.74 24 10 24 14.3V24h-5v-8.6c0-2.05-.04-4.69-2.86-4.69-2.86 0-3.3 2.23-3.3 4.54V24h-5V8z"/></svg>
             </a></li>
-            <li><a href="https://www.instagram.com/charterhouselagos/" target="_blank" rel="noopener" aria-label="Instagram">
+            <li><a href="#" target="_blank" rel="noopener" aria-label="Instagram">
               <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38C1.36 2.67.94 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.12.66.66 1.33 1.08 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.72 2.12-1.38.66-.66 1.08-1.33 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 00-1.38-2.12A5.86 5.86 0 0019.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zM12 16a4 4 0 114-4 4 4 0 01-4 4zm6.41-10.85a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44z"/></svg>
             </a></li>
-            <li><a href="https://www.youtube.com/@charterhouselagos" target="_blank" rel="noopener" aria-label="YouTube">
+            <li><a href="#" target="_blank" rel="noopener" aria-label="YouTube">
               <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3.02 3.02 0 00-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 00.5 6.2 31.5 31.5 0 000 12a31.5 31.5 0 00.5 5.8 3.02 3.02 0 002.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 002.12-2.14A31.5 31.5 0 0024 12a31.5 31.5 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></svg>
             </a></li>
-            <li><a href="https://www.facebook.com/charterhouselagos" target="_blank" rel="noopener" aria-label="Facebook">
+            <li><a href="#" target="_blank" rel="noopener" aria-label="Facebook">
               <svg viewBox="0 0 24 24"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.12 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
             </a></li>
-            <li><a href="https://twitter.com/Charterhouselag" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <li><a href="#" target="_blank" rel="noopener" aria-label="X / Twitter">
               <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             </a></li>
           </ul>
@@ -589,60 +571,60 @@ p{margin:0 0 1.1em;}
   <div class="footer__content">
     <div class="shell">
       <div class="footer__title" data-aos="fade-up">
-        <p><a href="https://www.charterhouse.org.uk/about-us/family-of-schools">Part of the Charterhouse family of schools</a></p>
+        <p>Excellence in education, in the heart of Imo State.</p>
       </div>
       <div class="footer__cols" data-aos="fade-up">
-        <div class="footer__col footer__col-size2">
+        <div class="footer__col">
           <div class="footer__contact-info">
-            <p>Ogombo Road, Ajah, Lagos, Nigeria.</p>
-            <p><i class="fa">&#9742;</i> +234 916 997 6906</p>
-            <p><i class="fa">&#9742;</i> +234 916 997 6898</p>
-            <p><i class="fa">&#9742;</i> +234 0802 689 6277</p>
-            <p><i class="fa">&#9742;</i> +234 0915 658 5115</p>
-            <p><i class="fa">&#9993;</i> <a href="mailto:admissions@charterhouselagos.com">admissions@charterhouselagos.com</a></p>
-            <img alt="Charterhouse Lagos" src="https://charterhouselagos.com/wp-content/themes/charterhouse/resources/images/logo.svg">
+            <p>[Add school address], Imo State, Nigeria.</p>
+            <p><i class="fa">&#9742;</i> +234 [phone number]</p>
+            <p><i class="fa">&#9742;</i> +234 [phone number]</p>
+            <p><i class="fa">&#9993;</i> <a href="mailto:admissions@shelruachimo.org">admissions@shelruachimo.org</a></p>
+            <div class="footer__logo-word">
+              <strong>SHELRUACH</strong><span>Imo &middot; Nigeria</span>
+            </div>
           </div>
         </div>
 
-        <div class="footer__col footer__col-size2">
-          <div class="footer__subtitle"><p>Charterhouse Lagos Prospectus</p></div>
+        <div class="footer__col">
+          <div class="footer__subtitle"><p>Prospectus</p></div>
           <div class="pdf-box">
-            <a href="https://drive.google.com/file/d/1Vy__aclof5U0pPSkToxuPnkvCmtd42_a/view?usp=sharing" title="Download our prospectus"></a>
+            <a href="#" title="Download our prospectus"></a>
             <div class="pdf__image">
-              <img loading="lazy" width="93" height="138" alt=""
-                src="https://charterhouselagos.com/wp-content/uploads/2026/04/Untitled-design.jpg">
+              <img loading="lazy" width="93" height="138" alt="Shelruach IMO prospectus"
+                src="https://picsum.photos/seed/shelruach-pros/186/276">
             </div>
             <div class="pdf__content"><p>Download our prospectus</p></div>
           </div>
         </div>
 
-        <div class="footer__col footer__col-size3">
+        <div class="footer__col">
           <div class="footer__subtitle"><p>Other links</p></div>
           <nav class="footer__nav">
             <ul class="menu">
-              <li><a href="https://charterhouselagos.com/admissions/">Admissions</a></li>
-              <li><a href="https://charterhouselagos.com/our-campus/">Campus Virtual Tour</a></li>
-              <li><a href="https://charterhouselagos.com/igcse-year-10/">IGCSE (Year 10)</a></li>
-              <li><a href="https://charterhouselagos.com/a-levels/">A-Levels</a></li>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Campus Tour</a></li>
+              <li><a href="#">Primary School</a></li>
+              <li><a href="#">Secondary School</a></li>
             </ul>
           </nav>
         </div>
 
-        <div class="footer__col footer__col-size3">
+        <div class="footer__col">
           <div class="footer__subtitle"><p>Policies</p></div>
           <nav class="footer__nav">
             <ul class="menu">
-              <li><a href="https://charterhouselagos.com/wp-content/uploads/2025/09/Safeguarding-Policy-Sept-2025.pdf">Safeguarding Policy</a></li>
-              <li><a href="https://charterhouselagos.com/wp-content/uploads/2024/05/C2.1-Admissions-Policy.pdf">Admissions Policy</a></li>
-              <li><a href="https://charterhouselagos.com/wp-content/uploads/2024/05/G4-Privacy-Policy-for-Parents-and-Students.pdf">Website Privacy</a></li>
-              <li><a href="https://charterhouselagos.com/cookie-policy-uk/">Cookie Policy (UK)</a></li>
+              <li><a href="#">Safeguarding Policy</a></li>
+              <li><a href="#">Admissions Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
             </ul>
           </nav>
         </div>
       </div>
 
       <div class="footer__copyright">
-        <p>Copyright &copy;2026 Charterhouse Lagos</p>
+        <p>Copyright &copy;2026 Shelruach IMO</p>
       </div>
     </div>
   </div>
@@ -654,10 +636,10 @@ p{margin:0 0 1.1em;}
   <div class="shell">
     <div class="booking-bar__inner">
       <div class="booking-bar__content">
-        <p>Join Us Today &mdash; Admissions&nbsp;<strong>Open&nbsp;all Year Round</strong>&nbsp; (Primary &amp; Secondary&nbsp; 1 &ndash; 9 , IGCSE &ndash; Year 10 and A-Levels)</p>
+        <p>Join Us Today &mdash; Admissions&nbsp;<strong>Open all Year Round</strong>&nbsp; (Early Years, Primary &amp; Secondary)</p>
       </div>
       <div class="booking-bar__actions">
-        <a href="https://charterhouselagos.com/admissions/" class="btn btn--quaternary">Enquire now</a>
+        <a href="#" class="btn btn--quaternary">Enquire now</a>
       </div>
     </div>
   </div>
@@ -666,7 +648,6 @@ p{margin:0 0 1.1em;}
 </div></div><!-- /.wrapper -->
 
 <script>
-// Mobile nav toggle
 (function(){
   var trigger=document.querySelector('.js-nav-trigger');
   var panel=document.querySelector('.header__content');
@@ -677,12 +658,10 @@ p{margin:0 0 1.1em;}
       document.body.style.overflow=panel.classList.contains('is-open')?'hidden':'';
     });
   }
-  // Close notification bar
   var bar=document.getElementById('bookingBar');
   var close=document.querySelector('.js-close-booking-bar');
   if(close&&bar){close.addEventListener('click',function(){bar.classList.add('is-hidden');});}
 
-  // Scroll-reveal (AOS-style)
   var els=document.querySelectorAll('[data-aos]');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(entries){
